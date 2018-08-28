@@ -129,7 +129,7 @@ d3.csv("stocks.csv", function(error, data) {
       .call(d3.axisLeft(y).ticks(10,"%"));
 
 	  svg.append("text")
-      .attr("x", 40)  // space legend
+      .attr("x", 20)  // space legend
       .attr("y", height + 60)
       .attr("class", "legend2")    // style the legend
       .style("text-anchor", "middle")
