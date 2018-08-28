@@ -122,6 +122,13 @@ d3.csv("stocks.csv", function(error, data) {
       .attr("class", "axis")
       .call(d3.axisLeft(y).ticks(10,"%"));
 
+	  svg.append("text")
+      .attr("x", 280)  // space legend
+      .attr("y", height + 40)
+      .attr("class", "legend")    // style the legend
+      .style("text-anchor", "middle")
+      .style("font-size", 11)
+      .text("Bron: CBS");
 });
 
 </script>
