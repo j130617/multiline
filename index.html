@@ -18,7 +18,7 @@ path {
     shape-rendering: crispEdges;
 }
 
-.legend {
+.legend1 {
     font-size: 14px;
     font-weight: bold;
     text-anchor: middle;
@@ -99,7 +99,7 @@ d3.csv("stocks.csv", function(error, data) {
         svg.append("text")
             .attr("x", (legendSpace/2)+i*legendSpace)  // space legend
             .attr("y", height + (margin.bottom/2)+ 5)
-            .attr("class", "legend")    // style the legend
+            .attr("class", "legend1")    // style the legend
             .style("fill", function() { // Add the colours dynamically
                 return d.color = color(d.key); })
             .on("click", function(){
